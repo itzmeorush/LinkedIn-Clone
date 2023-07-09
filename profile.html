@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linkedin</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="logo"><img src="./images/logo.png" /></a>
+      <div class="search-box">
+        <img src="./images/search.png" alt="" />
+        <input type="text" placeholder="search" />
+      </div>
+    </div>
+    <div class="nav-center">
+      <ul>
+        <li>
+          <a href="" class="active-link"><img src="./images/home.png" alt="" />home</a>
+        </li>
+        <li>
+          <a href=""><img src="./images/network.png" alt="" />my network</a>
+        </li>
+        <li>
+          <a href=""><img src="./images/jobs.png" alt="" />jobs</a>
+        </li>
+        <li>
+          <a href=""><img src="./images/message.png" alt="" />message</a>
+        </li>
+        <li>
+          <a href=""><img src="./images/notification.png" alt="" />notification</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <div class="online">
+        <img src="./images/user-1.png" class="nav-user-img" onclick="toggleMenu()" />
+      </div>
+    </div>
+    <div class="profile-drop-wrap" id="profile-menu">
+      <div class="profile-link">
+        <img src="./images/user-1.png" style="width: 50px; border-radius: 50%; margin-right: 15px" />
+        <div class="user-info">
+          <h3 style="font-size: 18px; font-weight: 400">Rayan Walton</h3>
+          <a href="profile.html" style="font-size: 13px; color: #c9dbf8">See your profile</a>
+        </div>
+      </div>
+      <hr style="
+            height: 1px;
+            background: #fff;
+            border: 0;
+            width: 90%;
+            margin: 10px;
+          " />
+      <a href="" class="profile-setting-links">
+        <img src="./images/feedback.png" />
+        <p>give Feedback</p>
+        <span>></span>
+      </a>
+      <a href="" class="profile-setting-links">
+        <img src="./images/setting.png" />
+        <p>Settings & Privacy</p>
+        <span>></span>
+      </a>
+      <a href="" class="profile-setting-links">
+        <img src="./images/help.png" />
+        <p>Help & support</p>
+        <span>></span>
+      </a>
+      <a href="" class="profile-setting-links">
+        <img src="./images/display.png" />
+        <p>Display & Accessibility</p>
+        <span>></span>
+      </a>
+      <a href="" class="profile-setting-links">
+        <img src="./images/logout.png" />
+        <p>Logout</p>
+        <span>></span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ----------------nav ends--------------------->
+  <div class="container">
+    <div class="profile-main">
+      <div class="profile-container">
+        
+        <img src="/images/cover-pic.png" alt="" width="100%" class="cover-img" />
+        <div class="profile-container-inner">
+          <img src="./images/user-1.png" alt="" class="user-img"/>
+          <h1>Rayan Walton</h1>
+          <b>Web Developer at microsoft | former developer at datastack and
+            intern at oracle
+          </b>
+
+          <p style="margin-top: 5px">
+            san Francisco, United States &middot;
+            <a href="" style="color: #045be6"> Contact info</a>
+          </p>
+          <br>
+          <div class="mutual-connection">
+            <img src="./images/user-2.png" alt="" style="width:
+                40px; border-radius: 50%; margin-right: 10px;">
+            <span style="font-size: 13px;">1 mutual connection: orlando Diggs</span>
+          </div>
+          <div class="profile-btn">
+            <a href=""><img src="./images/connect.png">Connect</a>
+            <a href=""><img src="./images/chat.png">message</a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-description">
+        <h2 style="color:#333; margin: 10px 0 20px;">About</h2>
+        <p>It is extremely important to have a strategy with your website. How are you going to get found online? What
+          kind of content are you going to push? Here are some ideas to keep in mind when considering your website’s
+          strategy.</p>
+        <a href="" style="display:block; text-align: right; font-size: 15px;">See more</a>
+      </div>
+      <div class="profile-description">
+        <h2 style="color: #222;">Experience</h2>
+        <div class="profile-desc-row">
+          <img src="./images/microsoft.png" alt="">
+          <div>
+            <h3 style="font-size: 18px;">Lead front-end Developer</h3>
+            <b>Microsoft &middot; full-time</b>
+            <b>Feb 2021 - Present &middot; 1.5 years</b>
+            <p style="margin-top: 15px;">Computer programs communicate information to computing devices. Computers then
+              carry out tasks based on the program instructions. Simple programs tell computers to run calculations,
+              while complex programs can run video games, analyze big data, or drive a car.
+
+            </p>
+            <hr>
+          </div>
+
+        </div>
+        <div class="profile-desc-row">
+          <img src="./images/slack.png" alt="">
+          <div>
+            <h3 style="font-size: 18px;">Full-stack Developer</h3>
+            <b>Slack &middot; full-time</b>
+            <b>june 2018 - jan 2021 &middot; 2.5 years</b>
+            <p style="margin-top: 15px;">Computer programs communicate information to computing devices. Computers then
+              carry out tasks based on the program instructions. Simple programs tell computers to run calculations,
+              while complex programs can run video games, analyze big data, or drive a car.
+
+            </p>
+            <hr>
+          </div>
+        </div>
+        <div class="profile-desc-row">
+          <img src="./images/google.png" alt="">
+          <div>
+            <h3 style="font-size: 18px;">Web Developer</h3>
+            <b>Google &middot; full-time</b>
+            <b>Sep 2015 - May 2016 &middot; 3.5 years</b>
+            <p style="margin-top: 15px;">Computer programs communicate information to computing devices. Computers then
+              carry out tasks based on the program instructions. Simple programs tell computers to run calculations,
+              while complex programs can run video games, analyze big data, or drive a car.
+            </p>
+            <br>
+            <hr style="width:100%">
+            <a href="" class="experience-link">Show all 7 experience <img src="./images/right-arrow.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-description">
+        <h2 style="color: #222;">Education</h2>
+        <div class="profile-desc-row">
+          <img src="./images/stanford.png" alt="">
+          <div>
+            <h3>Standford University</h3>
+            <b>BSEE, Electrical Engineering</b>
+            <b>2018-2022</b>
+            <hr>
+          </div>
+        </div>
+        <div class="profile-desc-row">
+          <img src="./images/north.png" alt="">
+          <div>
+            <h3>Northwestern University</h3>
+            <b>Computer Science</b>
+            <b>2015-2018</b>
+            <hr>
+          </div>
+        </div>
+        <div class="profile-desc-row">
+          <img src="./images/mit.png" alt="">
+          <div>
+            <h3>Harvard University</h3>
+            <b>Senior High School</b>
+            <b>2005-2015</b>
+
+          </div>
+        </div>
+      </div>
+      <div class="profile-description">
+        <h2 style="color: #222; margin-bottom: 20px;">Skills</h2>
+        <a href="" class="skill-btn">Leadership</a>
+        <a href="" class="skill-btn">Web design</a>
+        <a href="" class="skill-btn">Development</a>
+        <a href="" class="skill-btn">Communication</a>
+        <a href="" class="skill-btn">UI/UX</a>
+        <a href="" class="skill-btn">Planning</a>
+        <a href="" class="skill-btn">Coding</a>
+        <a href="" class="skill-btn">Javascript</a>
+        <a href="" class="skill-btn">Python</a>
+        <a href="" class="skill-btn">Enterprenuorship</a>
+      </div>
+      <div class="profile-description">
+        <h2 style="color: #222; margin-bottom: 20px;">Languages</h2>
+        <a href="" class="lan-btn">English</a>
+        <a href="" class="lan-btn">German</a>
+      </div>
+    </div>
+
+    <!-- ----------profile sidebar----------------------->
+    <div class="profile-sidebar-2">
+      <div class="sidebar">
+        <small>ad &middot; &middot; &middot;</small>
+        <p>master the 5 principle of web desinger</p>
+        <div>
+          <img src="./images/user-1.png" />
+          <img src="./images/mi-logo.png" alt="" />
+        </div>
+        <b>Brand and demand in Xiaomi</b>
+        <a href="" class="learn-btn">Learn more</a>
+      </div>
+
+      <div class="sidebar-people">
+        <h3>People you may know</h3>
+        <div class="sidebar-people-row">
+          <img src="./images/user-3.png" alt="" width="50px">
+          <div>
+            <h2>Samuel tony</h2>
+            <p>Head of Marketing at alibaba</p>
+            <a href="">Connect</a>
+          </div>
+        </div>
+        <div class="sidebar-people-row">
+          <img src="./images/user-4.png" alt="" width="50px">
+          <div>
+            <h2>Alisa joe</h2>
+            <p>Head of Marketing at alibaba</p>
+            <a href="">Connect</a>
+          </div>
+        </div>
+        <div class="sidebar-people-row">
+          <img src="./images/user-1.png" alt="" width="50px">
+          <div>
+            <h2>Martin Luther</h2>
+            <p>Head of Marketing at alibaba</p>
+            <a href="">Connect</a>
+          </div>
+        </div>
+        <div class="sidebar-people-row">
+          <img src="./images/user-5.png" alt="" width="50px">
+          <div>
+            <h2>Jackson George</h2>
+            <p>Head of Marketing at alibaba</p>
+            <a href="">Connect</a>
+          </div>
+        </div>
+        <div class="sidebar-people-row">
+          <img src="./images/user-2.png" alt="" width="50px">
+          <div>
+            <h2>Kevin leo</h2>
+            <p>Head of Marketing at alibaba</p>
+            <a href="">Connect</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- </div> -->
+
+  <div class="footer">
+    <div class="sidebar-useful-links">
+      <a href="">About</a>
+      <a href="">Accessibility</a>
+      <a href="">Help Center</a>`
+      <a href="">privacy policy</a>
+      <a href="">Advertising</a>
+      <a href="">Get the app</a>
+      <a href="">More</a>
+      <div class="copyright">
+        <img src="./images/logo.png" alt="" />
+        <p>Linkedup &copy; 2023. All right reserved</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
